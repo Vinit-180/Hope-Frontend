@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.custom-gradient-border {
+  border: 1.01px solid;
+  /* border-image-source: linear-gradient(104.59deg, rgba(255, 255, 255, 0.3) 0.76%, rgba(255, 255, 255, 0.0768416) 32.78%, rgba(255, 255, 255, 0.220526) 69.11%, rgba(255, 255, 255, 0.021) 99%); */
+  border: 1.01px solid;
+border-image-source: linear-gradient(104.59deg, rgba(255, 255, 255, 0.3) 0.76%, rgba(255, 255, 255, 0.0768416) 32.78%, rgba(255, 255, 255, 0.220526) 69.11%, rgba(255, 255, 255, 0.021) 99%);
+/* backdrop-filter: blur(41.07060241699219px) */
+  border-image-slice: 1;
 }
